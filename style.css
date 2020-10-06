@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.header {
+    height: 100px;
+    width: 100%;
+    font-size: 50px;
+    letter-spacing: -3px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(179, 218, 5);
+}
+
+.grid-container {
+    height: 500px;
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr 200px;
+    align-items: center;
+}
+
+.grid-item {
+    height: 200px;
+}
+
+.logo_player_1 {
+    background-image: url(/img/player1/1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.logo_player_2 {
+    background-image: url(/img/player2/2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.value_player_1, .value_player_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+}
+
+.point_player_1, .point_player_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+}
+
+.wrapper_btn_1, .wrapper_btn_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.button {
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.button_yellow_player {
+    background-color: yellow;
+    color: black;
+}
+
+.button_yellow_player:focus {
+    outline: none;
+}
+
+.button_red_player {
+    background-color: red;
+    color: black;
+}
+
+.button_red_player:focus {
+    outline: none;
+}
+
+.button_restart {
+    background-color: green;
+    color: black;
+}
+
+.button_restart:focus {
+    outline: none;
+}
+
+.lot {
+    height: 100px;
+    grid-column: 1/5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 30px;
+}
+
+.lot_btn {
+    font-size: 30px;
+    padding: 5px 20px;
+    background-color: rgb(179, 218, 5);
+    color: black;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.lot_btn:focus {
+    outline: none;
+}
